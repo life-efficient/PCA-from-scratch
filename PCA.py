@@ -17,6 +17,7 @@ class PCA:
     X /= m
     cov = X.T @ X
     eigenvalues, eigenvector = np.linalg.eig(cov)
+    print('hi')
 
 if __name__ == "__main__":
   data = pd.read_csv('../DATA/iris.csv')
