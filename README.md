@@ -1,2 +1,2 @@
 # PCA-from-scratch
-An implementation of PCA in raw bumpy
+An implementation of PCA in raw numpy
