@@ -8,12 +8,12 @@ class PCA:
   def __init__(self):
     pass
   
-  def fit(self):
+  def fit(self, X):
     """
     This is the fit method
     """
-
-    pass
+    X -= np.mean(X, axis=0)
+    X /= np.ptp(X, axis=0)
 
 
 if __name__ == "__main__":
