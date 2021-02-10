@@ -7,9 +7,14 @@ from sklearn import datasets
 class PCA:
   def __init__(self):
     pass
-
+  
   def fit(self):
+    """
+    This is the fit method
+    """
+
     pass
+
 
 if __name__ == "__main__":
   data = pd.read_csv('../DATA/iris.csv')
@@ -27,4 +32,6 @@ if __name__ == "__main__":
 
   pca = PCA()
   pca.fit(X)
-  
+
+
+
