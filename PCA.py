@@ -12,8 +12,9 @@ class PCA:
     """
     This is the fit method
     """
+    m = len(X)
     X -= np.mean(X, axis=0)
-    X /= np.ptp(X, axis=0)
+    X /= m
     cov = X.T @ X
     eigenvalues, eigenvector = np.linalg.eig(cov)
 
