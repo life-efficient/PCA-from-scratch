@@ -14,7 +14,8 @@ class PCA:
     """
     X -= np.mean(X, axis=0)
     X /= np.ptp(X, axis=0)
-
+    cov = X.T @ X
+    eigenvalues, eigenvector = np.linalg.eig(cov)
 
 if __name__ == "__main__":
   data = pd.read_csv('../DATA/iris.csv')
